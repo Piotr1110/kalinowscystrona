@@ -4,7 +4,7 @@
 # ============================================================
 backend:
   name: github
-  repo: Piotr1110/kalinowscy-strona   # <-- ZMIEŃ: login-GitHub/nazwa-repozytorium
+  repo: Piotr1110/kalinowscystrona   # <-- ZMIEŃ: login-GitHub/nazwa-repozytorium
   branch: main
   # site_domain: nazwa-twojej-strony.netlify.app   # <-- odkomentuj, jeśli panel otwierasz na własnej domenie
   # base_url: https://api.netlify.com               # (domyślnie – logowanie przez Netlify OAuth)
