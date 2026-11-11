@@ -1,0 +1,394 @@
+# ============================================================
+#  PANEL ADMINISTRACYJNY (Decap CMS) – po polsku
+#  Zmień tylko linię "repo" (i ewentualnie "site_domain"), reszta jest gotowa.
+# ============================================================
+backend:
+  name: github
+  repo: TWOJ-LOGIN-GITHUB/kalinowscy-strona   # <-- ZMIEŃ: login-GitHub/nazwa-repozytorium
+  branch: main
+  # site_domain: nazwa-twojej-strony.netlify.app   # <-- odkomentuj, jeśli panel otwierasz na własnej domenie
+  # base_url: https://api.netlify.com               # (domyślnie – logowanie przez Netlify OAuth)
+
+# Tryb z akceptacją: zmiany trafiają najpierw do "Szkiców" – możesz obejrzeć podgląd (Netlify Deploy Preview)
+# i dopiero potem opublikować. Aby publikować od razu, usuń poniższą linię.
+publish_mode: editorial_workflow
+
+locale: pl
+local_backend: true            # edycja lokalna: npx decap-server (opcjonalnie)
+logo_url: /assets/logo/sygnet-na-ciemnym.svg
+site_url: /
+display_url: /
+media_folder: assets/uploads
+public_folder: /assets/uploads
+slug:
+  encoding: ascii
+  clean_accents: true
+  sanitize_replacement: "-"
+
+collections:
+  # ---------------------------------------------------------- USTAWIENIA
+  - name: ustawienia
+    label: "⚙️ Dane firmy i ustawienia"
+    delete: false
+    files:
+      - name: ustawienia
+        label: "Dane kontaktowe, logo, social media"
+        file: content/ustawienia.json
+        fields:
+          - {label: "Pełna nazwa firmy", name: nazwa, widget: string}
+          - {label: "Nazwa skrócona", name: nazwa_skrot, widget: string}
+          - {label: "Telefon", name: telefon, widget: string, required: false, hint: "Np. +48 600 000 000 – po wpisaniu pojawi się w kontakcie i stopce"}
+          - {label: "E-mail do zapytań", name: email, widget: string, required: false, hint: "Na ten adres prowadzi przycisk „Napisz e-mail” (dolny pasek na telefonie)"}
+          - {label: "Ulica i numer", name: ulica, widget: string, required: false}
+          - {label: "Kod pocztowy", name: kod, widget: string, required: false}
+          - {label: "Miejscowość", name: miasto, widget: string, required: false}
+          - {label: "NIP", name: nip, widget: string, required: false}
+          - {label: "REGON", name: regon, widget: string, required: false}
+          - {label: "Godziny pracy", name: godziny, widget: string, required: false, hint: "Np. pon.–pt. 7:00–16:00"}
+          - {label: "Adres profilu Facebook", name: facebook, widget: string, required: false}
+          - {label: "Adres profilu firmy w Google", name: google_profil, widget: string, required: false}
+          - {label: "Adres strony (domena)", name: adres_strony, widget: string, required: false, hint: "Np. https://kalinowscy.pl – potrzebne do mapy strony (sitemap) i Google"}
+          - {label: "Logo na ciemnym tle (nagłówek, stopka)", name: logo_na_ciemnym, widget: image, required: false, hint: "Zostaw puste, aby użyć domyślnego logo"}
+          - {label: "Logo na jasnym tle", name: logo_na_jasnym, widget: image, required: false}
+          - {label: "Ikona strony (favicon)", name: ikona, widget: image, required: false}
+          - {label: "Domyślny opis strony (Google)", name: opis_domyslny, widget: text}
+          - {label: "Krótki opis w stopce", name: stopka_opis, widget: text}
+          - {label: "Własny adres wysyłki formularza (opcjonalnie)", name: formularz_endpoint, widget: string, required: false, hint: "Zostaw puste – formularz działa przez Netlify Forms. Wpisz np. adres Formspree, jeśli chcesz inną usługę."}
+          - {label: "Google Analytics 4 – identyfikator (opcjonalnie)", name: ga4_id, widget: string, required: false, hint: "Np. G-XXXXXXXXXX. Po wpisaniu pojawi się baner zgody na cookies."}
+
+  # ---------------------------------------------------------- STRONY
+  - name: strony
+    label: "📄 Treści stron"
+    delete: false
+    files:
+      - name: glowna
+        label: "Strona główna"
+        file: content/strona-glowna.json
+        fields:
+          - {label: "Tytuł w Google (SEO)", name: meta_tytul, widget: string}
+          - {label: "Opis w Google (SEO)", name: meta_opis, widget: text}
+          - label: "Pierwszy ekran (hero)"
+            name: hero
+            widget: object
+            fields:
+              - {label: "Zdjęcie przy nagłówku (opcjonalnie – gdy puste, pokazuje się grafika)", name: zdjecie, widget: image, required: false}
+              - {label: "Opis zdjęcia (czyta Google i czytniki ekranu)", name: zdjecie_alt, widget: string, required: false, hint: "Np. Koparka kołowa na budowie w Podlaskiem"}
+              - {label: "Nadtytuł", name: nadtytul, widget: string}
+              - {label: "Główny nagłówek (H1)", name: naglowek, widget: string}
+              - {label: "Podtytuł", name: podtytul, widget: string}
+              - {label: "Krótki opis", name: opis, widget: text}
+              - {label: "Przycisk 1", name: przycisk1, widget: string}
+              - {label: "Przycisk 2", name: przycisk2, widget: string}
+          - label: "Pasek czterech atutów"
+            name: filary
+            widget: list
+            fields: [{label: Tytuł, name: tytul, widget: string}, {label: Opis, name: opis, widget: string}]
+          - label: "Sekcja: przedstawienie firmy"
+            name: firma
+            widget: object
+            fields:
+              - {label: Nadtytuł, name: nadtytul, widget: string}
+              - {label: Nagłówek, name: naglowek, widget: string}
+              - {label: "Tekst (akapity oddziel pustą linią)", name: tekst, widget: text}
+              - {label: "Punkty (lista)", name: punkty, widget: list, field: {label: Punkt, name: punkt, widget: string}}
+              - {label: "Tekst przycisku", name: link, widget: string}
+              - {label: Zdjęcie, name: zdjecie, widget: image, required: false}
+              - {label: "Opis zdjęcia (SEO)", name: zdjecie_alt, widget: string, required: false}
+          - label: "Sekcja: zakres usług (nagłówek)"
+            name: uslugi
+            widget: object
+            fields: [{label: Nadtytuł, name: nadtytul, widget: string}, {label: Nagłówek, name: naglowek, widget: string}, {label: Wstęp, name: wstep, widget: text}]
+          - label: "Sekcja: roboty ziemne i drogowe"
+            name: proces
+            widget: object
+            fields:
+              - {label: Nadtytuł, name: nadtytul, widget: string}
+              - {label: Nagłówek, name: naglowek, widget: string}
+              - label: Kroki
+                name: kroki
+                widget: list
+                fields: [{label: Tytuł, name: tytul, widget: string}, {label: Opis, name: opis, widget: text}]
+          - label: "Sekcja: park maszynowy"
+            name: maszyny
+            widget: object
+            fields: [{label: Nadtytuł, name: nadtytul, widget: string}, {label: Nagłówek, name: naglowek, widget: string}, {label: Wstęp, name: wstep, widget: text}, {label: "Podpis nad listą pozostałego sprzętu", name: reszta, widget: string, required: false}, {label: "Tekst przycisku", name: link, widget: string}]
+          - label: "Sekcja: technologie 3D"
+            name: technologie3d
+            widget: object
+            fields:
+              - {label: Nadtytuł, name: nadtytul, widget: string}
+              - {label: Nagłówek, name: naglowek, widget: string}
+              - {label: Tekst, name: tekst, widget: text}
+              - label: "Korzyści"
+                name: korzysci
+                widget: list
+                fields: [{label: Tytuł, name: tytul, widget: string}, {label: Opis, name: opis, widget: text}]
+              - {label: "Nazwy marek / systemów", name: marki, widget: list, field: {label: Nazwa, name: marka, widget: string}}
+              - {label: "Tekst przycisku", name: link, widget: string}
+              - label: "Zdjęcia (do 2–3, najlepiej pionowe)"
+                name: zdjecia
+                widget: list
+                required: false
+                fields: [{label: Zdjęcie, name: zdjecie, widget: image}, {label: "Podpis pod zdjęciem", name: podpis, widget: string, required: false}]
+          - label: "Sekcja: wybrane realizacje (nagłówek)"
+            name: realizacje
+            widget: object
+            fields: [{label: Nadtytuł, name: nadtytul, widget: string}, {label: Nagłówek, name: naglowek, widget: string}, {label: Wstęp, name: wstep, widget: text}, {label: "Tekst przycisku", name: link, widget: string}]
+          - label: "Sekcja: generalni wykonawcy"
+            name: wykonawcy
+            widget: object
+            fields:
+              - {label: Nadtytuł, name: nadtytul, widget: string}
+              - {label: Nagłówek, name: naglowek, widget: string}
+              - {label: Tekst, name: tekst, widget: text}
+              - {label: Punkty, name: punkty, widget: list, field: {label: Punkt, name: punkt, widget: string}}
+              - {label: "Przycisk główny", name: przycisk, widget: string}
+              - {label: "Przycisk dodatkowy", name: link, widget: string}
+              - {label: Zdjęcie, name: zdjecie, widget: image, required: false}
+              - {label: "Opis zdjęcia (SEO)", name: zdjecie_alt, widget: string, required: false}
+          - label: "Sekcja: dlaczego warto"
+            name: dlaczego
+            widget: object
+            fields:
+              - {label: Nadtytuł, name: nadtytul, widget: string}
+              - {label: Nagłówek, name: naglowek, widget: string}
+              - label: Pozycje
+                name: pozycje
+                widget: list
+                fields: [{label: Tytuł, name: tytul, widget: string}, {label: Opis, name: opis, widget: text}]
+          - label: "Sekcja: obszar działania (lokalne SEO)"
+            name: obszar
+            widget: object
+            fields:
+              - {label: Nadtytuł, name: nadtytul, widget: string}
+              - {label: Nagłówek, name: naglowek, widget: string}
+              - {label: Wstęp, name: wstep, widget: text}
+              - label: "Rejony (miejscowości)"
+                name: miejsca
+                widget: list
+                fields:
+                  - {label: Miejscowość, name: nazwa, widget: string}
+                  - {label: Opis, name: opis, widget: text}
+                  - {label: "Strona lokalna, do której prowadzi kafelek", name: strona, widget: relation, collection: lokalne, search_fields: [miejscowosc], value_field: "{{slug}}", display_fields: [miejscowosc], required: false}
+              - {label: "Zdanie na końcu", name: stopka, widget: string}
+          - label: "Sekcja: kontakt"
+            name: kontakt
+            widget: object
+            fields: [{label: Nadtytuł, name: nadtytul, widget: string}, {label: Nagłówek, name: naglowek, widget: string}, {label: Tekst, name: tekst, widget: text}]
+
+      - name: o-firmie
+        label: "Podstrona: O firmie"
+        file: content/o-firmie.json
+        fields:
+          - {label: "Tytuł w Google (SEO)", name: meta_tytul, widget: string}
+          - {label: "Opis w Google (SEO)", name: meta_opis, widget: text}
+          - {label: Nagłówek, name: naglowek, widget: string}
+          - {label: "Zdanie wprowadzające", name: lead, widget: text}
+          - label: "Sekcje z tekstem i zdjęciem"
+            name: sekcje
+            widget: list
+            fields: [{label: Tytuł, name: tytul, widget: string}, {label: Tekst, name: tekst, widget: markdown}, {label: Zdjęcie, name: zdjecie, widget: image, required: false}, {label: "Opis zdjęcia (SEO)", name: zdjecie_alt, widget: string, required: false}, {label: "Pokaż schemat mapy (Hajnówka, Bielsk Podlaski, Białystok) zamiast zdjęcia", name: mapa, widget: boolean, default: false, required: false}, {label: "Grafika zamiast zdjęcia (działa, gdy nie wgrano zdjęcia)", name: grafika, widget: select, options: [{label: "Brak", value: ""}, {label: "Plan inwestycji (roboty ziemne, drogi, kostka)", value: plan}, {label: "Schemat sterowania 3D (przekrój terenu)", value: przekroj}], default: "", required: false}]
+          - label: "Atuty firmy"
+            name: atuty
+            widget: list
+            fields: [{label: Tytuł, name: tytul, widget: string}, {label: Opis, name: opis, widget: string}]
+
+      - name: oferta
+        label: "Podstrona: Oferta (kategorie usług)"
+        file: content/oferta.json
+        fields:
+          - {label: "Tytuł w Google (SEO)", name: meta_tytul, widget: string}
+          - {label: "Opis w Google (SEO)", name: meta_opis, widget: text}
+          - {label: Nagłówek, name: naglowek, widget: string}
+          - {label: "Zdanie wprowadzające", name: lead, widget: text}
+          - label: "Kategorie usług"
+            name: uslugi
+            widget: list
+            fields:
+              - {label: Nazwa, name: nazwa, widget: string}
+              - {label: "Identyfikator (małe litery, bez spacji – nie zmieniaj istniejących)", name: id, widget: string}
+              - {label: "Krótki opis (karty)", name: krotki, widget: text}
+              - {label: "Pełny opis", name: opis, widget: markdown}
+              - {label: "Punkty", name: punkty, widget: list, field: {label: Punkt, name: punkt, widget: string}}
+              - {label: Zdjęcie, name: zdjecie, widget: image, required: false}
+              - {label: "Pokaż w formularzu kontaktowym (lista „Rodzaj robót”)", name: w_formularzu, widget: boolean, default: true, required: false}
+
+      - name: park
+        label: "Podstrona: Park maszynowy (teksty)"
+        file: content/park-maszynowy.json
+        fields:
+          - {label: "Tytuł w Google (SEO)", name: meta_tytul, widget: string}
+          - {label: "Opis w Google (SEO)", name: meta_opis, widget: text}
+          - {label: Nagłówek, name: naglowek, widget: string}
+          - {label: "Zdanie wprowadzające", name: lead, widget: text}
+          - {label: "Maszyny ze zdjęciem – nadtytuł", name: klucz_nadtytul, widget: string, required: false}
+          - {label: "Maszyny ze zdjęciem – nagłówek", name: klucz_naglowek, widget: string, required: false}
+          - {label: "Maszyny ze zdjęciem – opis", name: klucz_lead, widget: text, required: false}
+          - {label: "Lista pozostałego sprzętu – nagłówek", name: reszta_naglowek, widget: string, required: false}
+          - {label: "Lista pozostałego sprzętu – opis", name: reszta_lead, widget: text, required: false}
+
+      - name: realizacje-strona
+        label: "Podstrona: Realizacje (teksty)"
+        file: content/realizacje.json
+        fields:
+          - {label: "Tytuł w Google (SEO)", name: meta_tytul, widget: string}
+          - {label: "Opis w Google (SEO)", name: meta_opis, widget: text}
+          - {label: Nagłówek, name: naglowek, widget: string}
+          - {label: "Zdanie wprowadzające", name: lead, widget: text}
+          - {label: "Komunikat, gdy brak realizacji", name: pusty, widget: string}
+
+      - name: wykonawcy
+        label: "Podstrona: Dla generalnych wykonawców"
+        file: content/dla-wykonawcow.json
+        fields:
+          - {label: "Tytuł w Google (SEO)", name: meta_tytul, widget: string}
+          - {label: "Opis w Google (SEO)", name: meta_opis, widget: text}
+          - {label: "Nagłówek (H1)", name: naglowek, widget: string}
+          - {label: "Zdanie wprowadzające", name: lead, widget: text}
+          - {label: "Tekst głównego przycisku", name: przycisk, widget: string}
+          - {label: Zdjęcie, name: zdjecie, widget: image, required: false}
+          - {label: "Opis zdjęcia (SEO)", name: zdjecie_alt, widget: string, required: false}
+          - label: Korzyści
+            name: korzysci
+            widget: list
+            fields: [{label: Tytuł, name: tytul, widget: string}, {label: Opis, name: opis, widget: text}]
+          - {label: "Nagłówek listy zakresów", name: zakresy_tytul, widget: string}
+          - {label: "Zakresy robót", name: zakresy, widget: list, field: {label: Zakres, name: zakres, widget: string}}
+          - {label: "Nagłówek: jak współpracujemy", name: kroki_tytul, widget: string}
+          - label: "Kroki współpracy"
+            name: kroki
+            widget: list
+            fields: [{label: Tytuł, name: tytul, widget: string}, {label: Opis, name: opis, widget: string}]
+          - {label: "Dolny baner – nagłówek", name: cta_naglowek, widget: string}
+          - {label: "Dolny baner – tekst", name: cta_tekst, widget: text}
+
+      - name: kontakt
+        label: "Podstrona: Kontakt"
+        file: content/kontakt.json
+        fields:
+          - {label: "Tytuł w Google (SEO)", name: meta_tytul, widget: string}
+          - {label: "Opis w Google (SEO)", name: meta_opis, widget: text}
+          - {label: Nagłówek, name: naglowek, widget: string}
+          - {label: "Zdanie wprowadzające", name: lead, widget: text}
+          - {label: "Nagłówek przy danych kontaktowych", name: formularz_tytul, widget: string}
+          - {label: "Opis obszaru działania", name: obszar, widget: text}
+
+      - name: polityka
+        label: "Polityka prywatności"
+        file: content/polityka-prywatnosci.json
+        fields:
+          - {label: "Tytuł w Google (SEO)", name: meta_tytul, widget: string}
+          - {label: Nagłówek, name: naglowek, widget: string}
+          - {label: "Treść (kody {{nazwa}}, {{adres}}, {{nip}}, {{kontakt}}, {{cookies}}, {{data}} są uzupełniane automatycznie – nie usuwaj ich)", name: tresc, widget: markdown}
+
+  # ---------------------------------------------------------- REALIZACJE
+  - name: realizacje
+    label: "🏗️ Realizacje"
+    label_singular: "realizację"
+    folder: content/realizacje
+    extension: json
+    format: json
+    create: true
+    identifier_field: nazwa
+    slug: "{{slug}}"
+    summary: "{{nazwa}} – {{lokalizacja}} {{rok}}"
+    fields:
+      - {label: "Nazwa inwestycji", name: nazwa, widget: string}
+      - {label: "Lokalizacja", name: lokalizacja, widget: string, required: false}
+      - {label: "Rok", name: rok, widget: string, required: false}
+      - label: "Rodzaj robót (można zaznaczyć kilka)"
+        name: kategorie
+        widget: select
+        multiple: true
+        options:
+          - {label: "Roboty drogowe", value: roboty-drogowe}
+          - {label: "Roboty ziemne", value: roboty-ziemne}
+          - {label: "Podbudowy", value: podbudowy}
+          - {label: "Brukarstwo", value: brukarstwo}
+          - {label: "Zagospodarowanie terenu", value: zagospodarowanie-terenu}
+      - {label: "Zakres prac", name: zakres, widget: markdown, required: false}
+      - {label: "Zdjęcie główne", name: zdjecie, widget: image, required: false, hint: "Możesz dodać zdjęcie prosto z telefonu (aparat lub galeria)"}
+      - {label: "Galeria zdjęć", name: galeria, widget: list, required: false, field: {label: Zdjęcie, name: zdjecie, widget: image}}
+      - {label: "Wykorzystany sprzęt (opcjonalnie)", name: sprzet, widget: list, required: false, field: {label: Maszyna, name: maszyna, widget: string}}
+      - {label: "To wpis przykładowy (pokaż plakietkę „Przykład”)", name: przyklad, widget: boolean, default: false, hint: "Odznacz po wpisaniu prawdziwych danych"}
+
+  # ---------------------------------------------------------- MASZYNY
+  - name: maszyny
+    label: "🚜 Park maszynowy"
+    label_singular: "maszynę"
+    folder: content/maszyny
+    extension: json
+    format: json
+    create: true
+    identifier_field: nazwa
+    slug: "{{slug}}"
+    summary: "{{nazwa}} ({{kategoria}})"
+    fields:
+      - {label: "Nazwa maszyny", name: nazwa, widget: string}
+      - label: Kategoria
+        name: kategoria
+        widget: select
+        options:
+          - {label: Koparki, value: koparki}
+          - {label: Spycharki, value: spycharki}
+          - {label: Ładowarki, value: ladowarki}
+          - {label: "Maszyny drogowe", value: maszyny-drogowe}
+          - {label: "Sprzęt brukarski", value: sprzet-brukarski}
+          - {label: Walce, value: walce}
+      - {label: "Model", name: model, widget: string, required: false, hint: "Uzupełnij, np. producent i model. Puste pole nie jest wyświetlane."}
+      - {label: "Zdjęcie", name: zdjecie, widget: image, required: false, hint: "Maszyna ZE zdjęciem pokazuje się jako duża karta na stronie głównej i w Parku maszynowym. Maszyna BEZ zdjęcia trafia na listę „Pozostały sprzęt”."}
+      - {label: "Krótki opis zastosowania", name: opis, widget: text}
+      - {label: "Wyposażona w system 3D", name: system3d, widget: boolean, default: false}
+      - {label: "Nazwa systemu 3D", name: system3d_opis, widget: string, required: false, hint: "Np. System sterowania 3D"}
+      - {label: "Kolejność (mniejsza liczba = wyżej)", name: kolejnosc, widget: number, value_type: int, default: 50}
+
+  # ---------------------------------------------------------- STRONY LOKALNE (SEO)
+  - name: lokalne
+    label: "📍 Strony lokalne (Google)"
+    label_singular: "stronę lokalną"
+    folder: content/lokalne
+    extension: json
+    format: json
+    create: true
+    identifier_field: miejscowosc
+    slug: "roboty-ziemne-i-drogowe-{{slug}}"
+    summary: "{{miejscowosc}}"
+    fields:
+      - {label: "Miejscowość", name: miejscowosc, widget: string, hint: "Np. Hajnówka. Nowa strona dostanie adres /roboty-ziemne-i-drogowe-nazwa-miejscowosci/"}
+      - {label: "Kolejność (mniejsza liczba = wyżej)", name: kolejnosc, widget: number, value_type: int, default: 50}
+      - {label: "Tytuł w Google (SEO)", name: meta_tytul, widget: string, hint: "Do ok. 60 znaków. Wzór: Roboty ziemne Miejscowość – firma drogowa | Kalinowscy"}
+      - {label: "Opis w Google (SEO)", name: meta_opis, widget: text, hint: "120–160 znaków; wpisz usługi i nazwę miejscowości"}
+      - {label: "Nagłówek strony (H1)", name: naglowek, widget: string, hint: "Np. Roboty ziemne i drogowe w Hajnówce"}
+      - {label: "Zdanie wprowadzające", name: lead, widget: text}
+      - {label: "Zdjęcie", name: zdjecie, widget: image, required: false}
+      - {label: "Opis zdjęcia (SEO)", name: zdjecie_alt, widget: string, required: false}
+      - label: "Sekcje z tekstem"
+        name: sekcje
+        widget: list
+        hint: "Pierwsza sekcja pokazuje się ze zdjęciem. Pisz konkretnie i własnymi słowami – każda miejscowość powinna mieć inny tekst."
+        fields: [{label: Tytuł, name: tytul, widget: string}, {label: Tekst, name: tekst, widget: markdown}]
+      - {label: "Nagłówek listy okolicznych miejscowości", name: okolice_naglowek, widget: string, required: false}
+      - {label: "Okoliczne miejscowości (tylko te, w których naprawdę pracujecie)", name: okolice, widget: list, required: false, field: {label: Miejscowość, name: nazwa, widget: string}}
+      - label: "Pytania i odpowiedzi (FAQ)"
+        name: faq
+        widget: list
+        required: false
+        fields: [{label: Pytanie, name: pytanie, widget: string}, {label: Odpowiedź, name: odpowiedz, widget: text}]
+
+  # ---------------------------------------------------------- NOWE PODSTRONY
+  - name: podstrony
+    label: "➕ Nowe podstrony"
+    label_singular: "podstronę"
+    folder: content/podstrony
+    extension: json
+    format: json
+    create: true
+    identifier_field: tytul
+    slug: "{{slug}}"
+    fields:
+      - {label: "Tytuł strony", name: tytul, widget: string}
+      - {label: "Adres strony", name: slug, widget: string, hint: "Małe litery, bez polskich znaków i spacji, np. certyfikaty → adres /certyfikaty/"}
+      - {label: "Pokaż w menu", name: w_menu, widget: boolean, default: false}
+      - {label: "Tytuł w Google (SEO)", name: meta_tytul, widget: string, required: false}
+      - {label: "Opis w Google (SEO)", name: meta_opis, widget: text, required: false}
+      - {label: "Treść", name: tresc, widget: markdown}

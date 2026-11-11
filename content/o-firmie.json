@@ -1,0 +1,55 @@
+{
+  "meta_tytul": "O firmie – firma drogowa z Podlasia | Kalinowscy",
+  "meta_opis": "Kalinowscy – firma drogowa z Podlasia z ponad 25-letnim doświadczeniem: roboty drogowe, ziemne i kostka brukowa, własny park maszynowy, technologie 3D.",
+  "naglowek": "O firmie",
+  "lead": "Wykonawca robót drogowych, ziemnych i brukarskich z ponad 25-letnim doświadczeniem, własnym sprzętem i technologiami 3D.",
+  "sekcje": [
+    {
+      "tytul": "Kim jesteśmy",
+      "tekst": "Przedsiębiorstwo Drogowe Kalinowscy od ponad 25 lat wykonuje roboty drogowe, roboty ziemne i nawierzchnie z betonowej kostki brukowej. Realizujemy podbudowy, place i parkingi, a także przygotowujemy tereny pod inwestycje przemysłowe, handlowe i budowlane.\n\nObsługujemy firmy, samorządy i jednostki publiczne oraz generalnych wykonawców, którzy szukają rzetelnego podwykonawcy. Zakres prac dopasowujemy do potrzeb inwestycji – od pojedynczej branży po kompletne przygotowanie terenu i podbudowy.\n\nPracujemy własnym sprzętem, a mobilizację maszyn i harmonogram robót organizujemy samodzielnie.",
+      "zdjecie": "",
+      "zdjecie_alt": "",
+      "grafika": "plan"
+    },
+    {
+      "tytul": "Sprzęt i technologia",
+      "tekst": "Mamy własne zaplecze sprzętowe: koparki kołowe i gąsienicowe, koparko-ładowarki, spycharkę, ładowarkę, walce drogowe oraz maszyny do układania kostki. Część maszyn pracuje w systemach sterowania 3D (Trimble, Steelwrist), co pozwala wykonywać roboty zgodnie z modelem projektu.\n\nW parku maszynowym są m.in. koparka kołowa z systemem 3D i tiltrotatorem Steelwrist, spycharka ze sterowaniem 3D i ładowarka z systemem profilowania 3D. [Zobacz park maszynowy](/park-maszynowy/).",
+      "zdjecie": "",
+      "zdjecie_alt": "",
+      "grafika": "przekroj"
+    },
+    {
+      "tytul": "Obszar działania",
+      "tekst": "Działamy przede wszystkim w województwie podlaskim – w okolicach [Hajnówki](/roboty-ziemne-i-drogowe-hajnowka/), [Bielska Podlaskiego](/roboty-drogowe-i-ziemne-bielsk-podlaski/) i [Białegostoku](/roboty-ziemne-i-drogowe-bialystok/). Po uzgodnieniu realizujemy inwestycje także w innych lokalizacjach.",
+      "zdjecie": "",
+      "mapa": true,
+      "grafika": ""
+    }
+  ],
+  "atuty": [
+    {
+      "tytul": "Własny sprzęt",
+      "opis": "Maszyny pod kontrolą firmy."
+    },
+    {
+      "tytul": "Ponad 25 lat doświadczenia",
+      "opis": "W drogownictwie, robotach ziemnych i brukarstwie."
+    },
+    {
+      "tytul": "Sprawna organizacja",
+      "opis": "Konkretne ustalenia i szybka mobilizacja."
+    },
+    {
+      "tytul": "Szeroki zakres prac",
+      "opis": "Od robót ziemnych po nawierzchnię z kostki."
+    },
+    {
+      "tytul": "Technologie 3D",
+      "opis": "Sterowanie maszyn według modelu cyfrowego."
+    },
+    {
+      "tytul": "Współpraca z wykonawcami",
+      "opis": "Realizacja wybranych zakresów jako podwykonawca."
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "kalinowscy-strona",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Strona internetowa Przedsiębiorstwa Drogowego Kalinowscy",
+  "scripts": {
+    "build": "node build.js",
+    "preview": "node build.js --preview",
+    "start": "node build.js && node tools/serve.js"
+  },
+  "engines": { "node": ">=18" },
+  "optionalDependencies": { "sharp": "^0.33.5" }
+}

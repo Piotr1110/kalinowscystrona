@@ -1,0 +1,51 @@
+{
+  "miejscowosc": "Białystok",
+  "kolejnosc": 3,
+  "meta_tytul": "Roboty ziemne i drogowe Białystok | Kalinowscy",
+  "meta_opis": "Firma drogowa dla inwestorów i generalnych wykonawców w Białymstoku: roboty ziemne, podbudowy, kostka brukowa, zagospodarowanie terenu. Własny sprzęt, 3D.",
+  "naglowek": "Roboty ziemne i drogowe w Białymstoku",
+  "lead": "Firma drogowa dla inwestorów i generalnych wykonawców w Białymstoku i okolicach: roboty ziemne, podbudowy, nawierzchnie z kostki i zagospodarowanie terenu.",
+  "zdjecie": "/assets/uploads/koparka-kolowa-teren.jpg",
+  "zdjecie_alt": "Koparka kołowa na robotach ziemnych na terenie inwestycji",
+  "sekcje": [
+    {
+      "tytul": "Firma drogowa Białystok – wykonawca i podwykonawca",
+      "tekst": "Dla generalnych wykonawców i inwestorów w Białymstoku przejmujemy wybrane zakresy robót ziemnych i drogowych albo realizujemy całość inwestycji. Mamy własne zaplecze sprzętowe: koparki kołowe i gąsienicowe, koparko-ładowarkę, spycharkę, ładowarkę, walce drogowe i maszyny brukarskie.\n\nElastycznie dopasowujemy organizację prac do harmonogramu – zakres, kolejność etapów i termin mobilizacji ustalamy z Tobą przed rozpoczęciem robót."
+    },
+    {
+      "tytul": "Nawierzchnie z kostki i zagospodarowanie terenu",
+      "tekst": "Wykonujemy place, parkingi i drogi wewnętrzne dla inwestycji przemysłowych, handlowych i budowlanych. Kostkę brukową układamy maszynowo, co sprawdza się na dużych powierzchniach. Wcześniej przygotowujemy teren i podbudowę – cały ciąg robót może wykonać jedna firma."
+    },
+    {
+      "tytul": "Technologie 3D przy robotach ziemnych",
+      "tekst": "Spycharka z systemem Trimble, koparka kołowa z tiltrotatorem Steelwrist i ładowarka z profilowaniem 3D pracują według cyfrowego modelu projektu. Dla inwestora oznacza to dokładność zgodną z dokumentacją i mniej poprawek na budowie."
+    }
+  ],
+  "okolice_naglowek": "Obsługujemy także okolice Białegostoku",
+  "okolice": [
+    "Wasilków",
+    "Supraśl",
+    "Choroszcz",
+    "Zabłudów",
+    "Juchnowiec Kościelny",
+    "Łapy"
+  ],
+  "faq": [
+    {
+      "pytanie": "Czy jesteście podwykonawcą dla generalnych wykonawców w Białymstoku?",
+      "odpowiedz": "Tak. Realizujemy wybrane zakresy robót ziemnych i drogowych jako podwykonawca, z własnym sprzętem. Przedmiar lub dokumentację możesz wysłać przez formularz."
+    },
+    {
+      "pytanie": "Jakie prace wykonujecie przy zagospodarowaniu terenu?",
+      "odpowiedz": "Place, parkingi i drogi wewnętrzne – od przygotowania terenu, przez podbudowę, po nawierzchnię z kostki brukowej układanej maszynowo."
+    },
+    {
+      "pytanie": "Czy pracujecie poza Białymstokiem?",
+      "odpowiedz": "Tak. Działamy w całym województwie podlaskim, najczęściej w okolicach Hajnówki, Bielska Podlaskiego i Białegostoku. Inne lokalizacje – po uzgodnieniu."
+    },
+    {
+      "pytanie": "Co zawrzeć w zapytaniu o wycenę robót ziemnych?",
+      "odpowiedz": "Lokalizację, zakres robót, orientacyjną powierzchnię lub ilości mas ziemnych, planowany termin oraz – jeśli masz – przedmiar lub projekt."
+    }
+  ]
+}

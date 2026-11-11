@@ -1,0 +1,16 @@
+{
+  "lokalizacja": "Miejscowość (uzupełnij)",
+  "rok": "",
+  "zakres": "To jest wpis przykładowy. Usuń go lub nadpisz prawdziwymi danymi.",
+  "zdjecie": "",
+  "galeria": [],
+  "sprzet": [
+    "Spycharka 3D",
+    "Koparka 3D"
+  ],
+  "przyklad": true,
+  "nazwa": "Przykładowa realizacja: roboty ziemne",
+  "kategorie": [
+    "roboty-ziemne"
+  ]
+}

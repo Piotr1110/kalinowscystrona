@@ -1,0 +1,17 @@
+{
+  "lokalizacja": "Miejscowość (uzupełnij)",
+  "rok": "",
+  "zakres": "To jest wpis przykładowy. Zastąp go prawdziwą realizacją w panelu administracyjnym: nazwa inwestycji, lokalizacja, rok, zakres prac i zdjęcia.",
+  "zdjecie": "",
+  "galeria": [],
+  "sprzet": [
+    "Koparka",
+    "Walec drogowy"
+  ],
+  "przyklad": true,
+  "nazwa": "Przykładowa realizacja: droga dojazdowa",
+  "kategorie": [
+    "roboty-drogowe",
+    "podbudowy"
+  ]
+}

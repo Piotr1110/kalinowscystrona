@@ -1,0 +1,62 @@
+{
+  "meta_tytul": "Oferta: roboty ziemne, drogi, podbudowy, kostka | Kalinowscy",
+  "meta_opis": "Roboty ziemne, budowa dróg i podbudowy, nawierzchnie z kostki brukowej i zagospodarowanie terenu. Własny sprzęt, sterowanie 3D. Hajnówka, Białystok.",
+  "naglowek": "Oferta",
+  "lead": "Cztery obszary działania – od przygotowania terenu po gotową nawierzchnię. Każdy zakres możemy wycenić osobno.",
+  "uslugi": [
+    {
+      "id": "roboty-ziemne",
+      "nazwa": "Roboty ziemne",
+      "krotki": "Wykopy, nasypy, niwelacja, profilowanie i wymiana gruntu.",
+      "opis": "Wykonujemy kompletne roboty ziemne pod drogi, place, hale i inne inwestycje – od wykopów i korytowania po nasypy i profilowanie podłoża. Pracujemy koparkami kołowymi i gąsienicowymi, koparko-ładowarką, spycharką i ładowarką.\n\nCzęść prac prowadzimy maszynami sterowanymi w technologii 3D (spycharka z systemem Trimble, koparka z tiltrotatorem Steelwrist), dzięki czemu rzędne i spadki wykonujemy zgodnie z modelem projektu.",
+      "punkty": [
+        "Wykopy i nasypy",
+        "Korytowanie i niwelacja terenu",
+        "Profilowanie i wymiana gruntu",
+        "Przygotowanie terenu pod inwestycje przemysłowe, handlowe i budowlane"
+      ],
+      "zdjecie": "/assets/uploads/roboty-ziemne-spycharka.jpg",
+      "w_formularzu": true
+    },
+    {
+      "id": "drogi-i-podbudowy",
+      "nazwa": "Budowa dróg i podbudowy",
+      "krotki": "Budowa i przebudowa dróg oraz warstwy nośne dróg, placów i parkingów.",
+      "opis": "Budujemy i przebudowujemy drogi, w tym drogi wewnętrzne, a także wykonujemy podbudowy pod nawierzchnie dróg, placów i parkingów. Realizujemy cały zakres od robót ziemnych po warstwy nośne – bez angażowania kilku podwykonawców.\n\nProfilowanie warstw wspierają systemy 3D, a zagęszczanie prowadzimy własnymi walcami drogowymi. Współpracujemy z generalnymi wykonawcami i inwestorami.",
+      "punkty": [
+        "Budowa i przebudowa dróg",
+        "Drogi wewnętrzne",
+        "Profilowanie warstw i zagęszczanie walcami drogowymi",
+        "Podbudowy pod kostkę i inne nawierzchnie"
+      ],
+      "zdjecie": "/assets/uploads/podbudowa-z-kruszywa-las.jpg",
+      "w_formularzu": false
+    },
+    {
+      "id": "nawierzchnie-z-kostki",
+      "nazwa": "Nawierzchnie z kostki brukowej",
+      "krotki": "Kostka brukowa układana maszynowo.",
+      "opis": "Dysponujemy dwiema maszynami do mechanicznego układania betonowej kostki brukowej, co przyspiesza prace na większych powierzchniach.",
+      "punkty": [
+        "Układanie mechaniczne",
+        "Place, parkingi i drogi wewnętrzne",
+        "Duże powierzchnie"
+      ],
+      "zdjecie": "",
+      "w_formularzu": true
+    },
+    {
+      "id": "zagospodarowanie-terenu",
+      "nazwa": "Zagospodarowanie terenu",
+      "krotki": "Place, parkingi i drogi wewnętrzne.",
+      "opis": "Kompleksowo przygotowujemy i zagospodarowujemy teren: budujemy place, parkingi i drogi wewnętrzne dla inwestycji przemysłowych, handlowych i budowlanych.",
+      "punkty": [
+        "Budowa placów i parkingów",
+        "Drogi wewnętrzne",
+        "Zagospodarowanie terenu inwestycji"
+      ],
+      "zdjecie": "/assets/uploads/koparka-kolowa-teren.jpg",
+      "w_formularzu": true
+    }
+  ]
+}

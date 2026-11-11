@@ -1,0 +1,51 @@
+{
+  "miejscowosc": "Bielsk Podlaski",
+  "kolejnosc": 2,
+  "meta_tytul": "Roboty drogowe Bielsk Podlaski – podbudowy | Kalinowscy",
+  "meta_opis": "Roboty drogowe i ziemne w Bielsku Podlaskim i okolicach: budowa dróg, podbudowy, place, parkingi, kostka brukowa. Własny sprzęt i ponad 25 lat doświadczenia.",
+  "naglowek": "Roboty drogowe i ziemne w Bielsku Podlaskim",
+  "lead": "Budowa dróg, podbudowy, place i parkingi w Bielsku Podlaskim i okolicach. Wykonujemy cały zakres od robót ziemnych po warstwy nośne – własnym sprzętem.",
+  "zdjecie": "/assets/uploads/podbudowa-z-kruszywa-las.jpg",
+  "zdjecie_alt": "Podbudowa z kruszywa pod drogę i koparka na budowie",
+  "sekcje": [
+    {
+      "tytul": "Roboty drogowe – Bielsk Podlaski",
+      "tekst": "Budujemy i przebudowujemy drogi w Bielsku Podlaskim i na terenie powiatu bielskiego, w tym drogi wewnętrzne dla firm i inwestorów. Realizujemy pełny zakres: roboty ziemne, korytowanie, podbudowy, zagęszczanie walcami drogowymi i przygotowanie pod nawierzchnię.\n\nProfilowanie warstw wspieramy systemami sterowania 3D, co pomaga utrzymać rzędne i spadki zgodne z projektem."
+    },
+    {
+      "tytul": "Place, parkingi i zagospodarowanie terenu",
+      "tekst": "Dla inwestycji handlowych, przemysłowych i budowlanych wykonujemy place, parkingi i drogi wewnętrzne – od przygotowania terenu po podbudowę oraz nawierzchnię z kostki brukowej układanej maszynowo. Dysponujemy dwiema maszynami brukarskimi, co przyspiesza prace na większych powierzchniach."
+    },
+    {
+      "tytul": "Współpraca z inwestorami i wykonawcami",
+      "tekst": "Współpracujemy z firmami, samorządami, inwestorami i generalnymi wykonawcami. Możemy wykonać całość robót albo wybrany zakres jako podwykonawca. Zapytanie z przedmiarem lub dokumentacją prześlesz przez formularz – odpowiemy z informacją o możliwościach realizacji i wyceną."
+    }
+  ],
+  "okolice_naglowek": "Obsługujemy także okolice Bielska Podlaskiego",
+  "okolice": [
+    "Brańsk",
+    "Boćki",
+    "Orla",
+    "Rudka",
+    "Wyszki",
+    "Hajnówka"
+  ],
+  "faq": [
+    {
+      "pytanie": "Czy wykonujecie roboty drogowe w Bielsku Podlaskim?",
+      "odpowiedz": "Tak. Budujemy i przebudowujemy drogi, wykonujemy podbudowy, place, parkingi i drogi wewnętrzne w Bielsku Podlaskim i okolicach."
+    },
+    {
+      "pytanie": "Czy możecie wykonać podbudowę pod kostkę brukową?",
+      "odpowiedz": "Tak. Wykonujemy podbudowy pod kostkę i inne nawierzchnie, a także układamy kostkę brukową maszynowo – na większych powierzchniach znacząco skraca to czas prac."
+    },
+    {
+      "pytanie": "Czy można zlecić tylko roboty ziemne?",
+      "odpowiedz": "Tak. Zakresy wyceniamy osobno – możesz zlecić same roboty ziemne, samą podbudowę albo cały zakres od przygotowania terenu po nawierzchnię."
+    },
+    {
+      "pytanie": "Jak szybko przygotujecie wycenę?",
+      "odpowiedz": "Odpowiadamy najszybciej, jak to możliwe. Czas zależy od kompletności materiałów – im dokładniejszy przedmiar lub opis, tym szybciej przygotujemy ofertę."
+    }
+  ]
+}

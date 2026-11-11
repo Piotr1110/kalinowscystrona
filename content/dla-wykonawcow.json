@@ -1,0 +1,55 @@
+{
+  "meta_tytul": "Podwykonawca robót ziemnych i drogowych | Kalinowscy",
+  "meta_opis": "Wykonawca robót ziemnych i drogowych dla generalnych wykonawców. Podwykonawstwo wybranych zakresów, własny sprzęt, systemy 3D. Podlaskie.",
+  "naglowek": "Szukasz wykonawcy robót ziemnych lub drogowych?",
+  "lead": "Realizujemy wybrane zakresy jako podwykonawca – z własnym zapleczem sprzętowym i elastycznym podejściem do harmonogramu.",
+  "przycisk": "Wyślij przedmiar lub dokumentację",
+  "zdjecie": "",
+  "korzysci": [
+    {
+      "tytul": "Podwykonawstwo",
+      "opis": "Wykonujemy wybrane zakresy robót lub całość – według potrzeb generalnego wykonawcy."
+    },
+    {
+      "tytul": "Własne zaplecze sprzętowe",
+      "opis": "Maszyny firmy, bez uzależnienia od zewnętrznych wynajmów."
+    },
+    {
+      "tytul": "Elastyczność",
+      "opis": "Dostosowujemy organizację prac do etapów i harmonogramu inwestycji."
+    },
+    {
+      "tytul": "Technologie 3D",
+      "opis": "Roboty ziemne i profilowanie z użyciem systemów sterowania maszyn 3D."
+    }
+  ],
+  "zakresy_tytul": "Zakresy, które możemy przejąć",
+  "zakresy": [
+    "Roboty ziemne: wykopy, nasypy, korytowanie, niwelacja",
+    "Wymiana i profilowanie gruntu",
+    "Podbudowy dróg, placów i parkingów",
+    "Budowa i przebudowa dróg oraz dróg wewnętrznych",
+    "Nawierzchnie z kostki brukowej układanej maszynowo"
+  ],
+  "kroki_tytul": "Jak współpracujemy",
+  "kroki": [
+    {
+      "tytul": "Przesyłasz zapytanie",
+      "opis": "Przedmiar, dokumentacja lub opis zakresu."
+    },
+    {
+      "tytul": "Analizujemy zakres",
+      "opis": "Sprawdzamy lokalizację, warunki i możliwości realizacji."
+    },
+    {
+      "tytul": "Przygotowujemy wycenę",
+      "opis": "Otrzymujesz ofertę na wybrany zakres."
+    },
+    {
+      "tytul": "Ustalamy harmonogram",
+      "opis": "Planujemy mobilizację sprzętu i start robót."
+    }
+  ],
+  "cta_naglowek": "Prześlij przedmiar lub dokumentację",
+  "cta_tekst": "Wystarczy plik PDF, XLSX lub DOCX. Odpowiemy z informacją o możliwościach realizacji i wycenie."
+}

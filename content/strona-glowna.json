@@ -1,0 +1,191 @@
+{
+  "meta_tytul": "Roboty ziemne i drogowe Hajnówka, Białystok | Kalinowscy",
+  "meta_opis": "Roboty ziemne i drogowe w Podlaskiem: Hajnówka, Bielsk Podlaski, Białystok. Ponad 25 lat doświadczenia, podbudowy, kostka brukowa, sterowanie 3D.",
+  "hero": {
+    "zdjecie": "",
+    "nadtytul": "Przedsiębiorstwo Drogowe",
+    "naglowek": "Roboty drogowe i ziemne",
+    "podtytul": "Od przygotowania terenu po gotową nawierzchnię.",
+    "opis": "Od ponad 25 lat realizujemy roboty drogowe, ziemne i brukarskie w Podlaskiem. Wykonujemy podbudowy, przygotowujemy tereny pod inwestycje i pracujemy własnym parkiem maszynowym.",
+    "przycisk1": "Zapytaj o wycenę",
+    "przycisk2": "Zobacz realizacje",
+    "zdjecie_alt": ""
+  },
+  "filary": [
+    {
+      "tytul": "Ponad 25 lat doświadczenia",
+      "opis": "Roboty drogowe, ziemne i brukarskie."
+    },
+    {
+      "tytul": "Własny park maszynowy",
+      "opis": "Koparki, spycharka, ładowarka i walce."
+    },
+    {
+      "tytul": "Sterowanie maszyn 3D",
+      "opis": "Systemy Trimble i Steelwrist na budowie."
+    },
+    {
+      "tytul": "Podlaskie i okolice",
+      "opis": "Hajnówka, Bielsk Podlaski, Białystok."
+    }
+  ],
+  "firma": {
+    "nadtytul": "O firmie",
+    "naglowek": "Ponad 25 lat na drogach i budowach Podlasia",
+    "tekst": "Przedsiębiorstwo Drogowe Kalinowscy od ponad 25 lat wykonuje roboty drogowe, ziemne i brukarskie. Realizujemy inwestycje w województwie podlaskim – w okolicach Hajnówki, Bielska Podlaskiego i Białegostoku – a w uzasadnionych przypadkach także w innych lokalizacjach.\n\nPracujemy własnym sprzętem, w tym maszynami sterowanymi w technologii 3D. Dla inwestorów i generalnych wykonawców przygotowujemy teren, budujemy podbudowy i wykonujemy nawierzchnie – zgodnie z projektem i harmonogramem.",
+    "punkty": [
+      "Ponad 25 lat doświadczenia w drogownictwie i robotach ziemnych",
+      "Własne maszyny i sprawna organizacja prac",
+      "Praca w technologii 3D",
+      "Gotowość do współpracy z większymi wykonawcami"
+    ],
+    "link": "Poznaj firmę",
+    "zdjecie": "",
+    "zdjecie_alt": ""
+  },
+  "uslugi": {
+    "nadtytul": "Zakres usług",
+    "naglowek": "Co robimy",
+    "wstep": "Pełny zakres robót – od przygotowania terenu po wykończenie nawierzchni – realizowany własnym sprzętem."
+  },
+  "proces": {
+    "nadtytul": "Roboty ziemne i drogowe",
+    "naglowek": "Od terenu do nawierzchni",
+    "kroki": [
+      {
+        "tytul": "Przygotowanie terenu",
+        "opis": "Niwelacja, wykopy, korytowanie i wymiana gruntu."
+      },
+      {
+        "tytul": "Roboty ziemne",
+        "opis": "Nasypy i profilowanie terenu zgodnie z projektem."
+      },
+      {
+        "tytul": "Podbudowa",
+        "opis": "Warstwy nośne dróg, placów i parkingów, zagęszczane walcami."
+      },
+      {
+        "tytul": "Nawierzchnia",
+        "opis": "Kostka brukowa układana mechanicznie."
+      }
+    ]
+  },
+  "maszyny": {
+    "nadtytul": "Park maszynowy",
+    "naglowek": "Własny sprzęt na budowie",
+    "wstep": "Maszyny prowadzone w technologii 3D – koparka kołowa z tiltrotatorem, spycharka i ładowarka – oraz pozostały sprzęt: koparki, walce i maszyny brukarskie.",
+    "link": "Cały park maszynowy",
+    "reszta": "Pozostały sprzęt"
+  },
+  "technologie3d": {
+    "nadtytul": "Technologie 3D",
+    "naglowek": "Maszyny prowadzone cyfrowym modelem terenu",
+    "tekst": "Wykorzystujemy sterowanie maszyn 3D przy robotach ziemnych i drogowych. Spycharka z systemem Trimble, koparka kołowa z systemem 3D i tiltrotatorem Steelwrist oraz ładowarka z systemem profilowania 3D pracują według modelu projektu – operator na bieżąco widzi położenie narzędzia względem zaprojektowanych rzędnych.",
+    "korzysci": [
+      {
+        "tytul": "Dokładność zgodna z projektem",
+        "opis": "Rzędne i spadki wykonywane według modelu 3D."
+      },
+      {
+        "tytul": "Mniej poprawek",
+        "opis": "Mniej pomiarów kontrolnych i przeróbek na budowie."
+      },
+      {
+        "tytul": "Sprawny przebieg robót",
+        "opis": "Szybsze profilowanie i lepsza kontrola ilości materiału."
+      }
+    ],
+    "marki": [
+      "Trimble",
+      "Steelwrist"
+    ],
+    "link": "Zobacz maszyny z systemem 3D",
+    "zdjecia": [
+      {
+        "zdjecie": "/assets/uploads/pomiary-3d-maszt-gps.jpg",
+        "podpis": "Widok z kabiny: maszt 3D i tachimetr w terenie"
+      },
+      {
+        "zdjecie": "/assets/uploads/trimble-tachimetr-kontroler.jpg",
+        "podpis": "Kontroler Trimble i tachimetr przy pracach pomiarowych"
+      }
+    ]
+  },
+  "realizacje": {
+    "nadtytul": "Realizacje",
+    "naglowek": "Wybrane realizacje",
+    "wstep": "Przykłady robót wykonanych przez naszą firmę.",
+    "link": "Wszystkie realizacje"
+  },
+  "wykonawcy": {
+    "nadtytul": "Dla generalnych wykonawców",
+    "naglowek": "Szukasz wykonawcy robót ziemnych lub drogowych?",
+    "tekst": "Przejmiemy wybrany zakres robót jako podwykonawca. Mamy własne zaplecze sprzętowe i elastycznie dopasowujemy się do harmonogramu inwestycji.",
+    "punkty": [
+      "Wybrane zakresy lub całość robót",
+      "Własny sprzęt i doświadczony zespół",
+      "Elastyczna współpraca"
+    ],
+    "przycisk": "Wyślij przedmiar lub dokumentację",
+    "link": "Oferta dla wykonawców",
+    "zdjecie": ""
+  },
+  "dlaczego": {
+    "nadtytul": "Dlaczego my",
+    "naglowek": "Dlaczego warto z nami współpracować",
+    "pozycje": [
+      {
+        "tytul": "Ponad 25 lat doświadczenia",
+        "opis": "Od ponad 25 lat wykonujemy roboty drogowe, ziemne i brukarskie."
+      },
+      {
+        "tytul": "Własny sprzęt",
+        "opis": "Pracujemy własnymi maszynami – sami organizujemy ich mobilizację na budowę."
+      },
+      {
+        "tytul": "Technologie 3D",
+        "opis": "Sterowanie maszyn 3D przy robotach ziemnych i profilowaniu."
+      },
+      {
+        "tytul": "Szeroki zakres prac",
+        "opis": "Od robót ziemnych po kostkę – mniej podwykonawców na budowie."
+      },
+      {
+        "tytul": "Sprawna organizacja",
+        "opis": "Konkretna komunikacja i szybka mobilizacja sprzętu."
+      },
+      {
+        "tytul": "Elastyczna współpraca",
+        "opis": "Pełna realizacja albo wybrany zakres jako podwykonawca."
+      }
+    ]
+  },
+  "kontakt": {
+    "nadtytul": "Kontakt",
+    "naglowek": "Zapytaj o wycenę",
+    "tekst": "Opisz inwestycję lub załącz przedmiar albo dokumentację. Odpowiemy najszybciej, jak to możliwe."
+  },
+  "obszar": {
+    "nadtytul": "Obszar działania",
+    "naglowek": "Roboty ziemne i drogowe w Podlaskiem",
+    "wstep": "Jako wykonawca robót ziemnych i drogowych pracujemy w całym województwie podlaskim. Najczęściej realizujemy inwestycje w trzech rejonach – wybierz swój, aby zobaczyć szczegóły.",
+    "miejsca": [
+      {
+        "nazwa": "Hajnówka i okolice",
+        "opis": "Roboty ziemne w Hajnówce i okolicach: wykopy, nasypy, niwelacja oraz przygotowanie terenu pod inwestycje.",
+        "strona": "roboty-ziemne-i-drogowe-hajnowka"
+      },
+      {
+        "nazwa": "Bielsk Podlaski",
+        "opis": "Roboty drogowe w Bielsku Podlaskim i okolicach: budowa dróg, podbudowy drogowe, place i parkingi.",
+        "strona": "roboty-drogowe-i-ziemne-bielsk-podlaski"
+      },
+      {
+        "nazwa": "Białystok",
+        "opis": "Firma drogowa dla inwestorów i generalnych wykonawców w Białymstoku: nawierzchnie z kostki i zagospodarowanie terenu.",
+        "strona": "roboty-ziemne-i-drogowe-bialystok"
+      }
+    ],
+    "stopka": "Inne lokalizacje w Polsce – po uzgodnieniu."
+  }
+}

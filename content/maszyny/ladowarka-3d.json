@@ -1,0 +1,10 @@
+{
+  "model": "",
+  "system3d": true,
+  "system3d_opis": "System profilowania 3D",
+  "zdjecie": "/assets/uploads/ladowarka-kolowa-3d.jpg",
+  "kolejnosc": 3,
+  "nazwa": "Ładowarka kołowa z systemem profilowania 3D",
+  "kategoria": "ladowarki",
+  "opis": "Profilowanie podbudów i placów według modelu 3D oraz załadunek materiałów."
+}

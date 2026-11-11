@@ -1,0 +1,10 @@
+{
+  "model": "",
+  "system3d": true,
+  "system3d_opis": "System sterowania 3D",
+  "zdjecie": "/assets/uploads/spycharka-3d.jpg",
+  "kolejnosc": 1,
+  "nazwa": "Spycharka ze sterowaniem 3D",
+  "kategoria": "spycharki",
+  "opis": "Roboty ziemne i planowanie terenu z dokładnością zgodną z modelem projektu. Położenie lemiesza jest na bieżąco porównywane z cyfrowym modelem terenu."
+}

@@ -1,0 +1,52 @@
+{
+  "miejscowosc": "Hajnówka",
+  "kolejnosc": 1,
+  "meta_tytul": "Roboty ziemne Hajnówka – firma drogowa | Kalinowscy",
+  "meta_opis": "Roboty ziemne i drogowe w Hajnówce i okolicach: wykopy, nasypy, podbudowy, drogi, kostka brukowa. Własny sprzęt, sterowanie 3D, ponad 25 lat doświadczenia.",
+  "naglowek": "Roboty ziemne i drogowe w Hajnówce",
+  "lead": "Wykonujemy roboty ziemne, budowę dróg i podbudowy w Hajnówce oraz w powiecie hajnowskim. Własny sprzęt, maszyny sterowane w technologii 3D i ponad 25 lat doświadczenia.",
+  "zdjecie": "/assets/uploads/roboty-ziemne-spycharka.jpg",
+  "zdjecie_alt": "Spycharka na robotach ziemnych przy drodze w Podlaskiem",
+  "sekcje": [
+    {
+      "tytul": "Roboty ziemne – Hajnówka i okolice",
+      "tekst": "Realizujemy roboty ziemne w Hajnówce i okolicznych miejscowościach: wykopy, nasypy, korytowanie pod drogi i place, niwelację terenu oraz wymianę gruntu. Pracujemy koparkami kołowymi i gąsienicowymi, koparko-ładowarką, spycharką i ładowarką.\n\nCzęść robót prowadzimy w technologii 3D – spycharką z systemem Trimble i koparką z tiltrotatorem Steelwrist. Rzędne i spadki wykonujemy według modelu projektu, co ogranicza poprawki i przyspiesza prace."
+    },
+    {
+      "tytul": "Drogi i podbudowy w powiecie hajnowskim",
+      "tekst": "Budujemy i przebudowujemy drogi, w tym drogi wewnętrzne, oraz wykonujemy podbudowy pod nawierzchnie dróg, placów i parkingów. Zakres możemy przejąć w całości – od przygotowania podłoża po warstwy nośne – albo wykonać wybrany etap jako podwykonawca generalnego wykonawcy."
+    },
+    {
+      "tytul": "Od czego zależy wycena robót ziemnych",
+      "tekst": "Na koszt robót ziemnych wpływają m.in. rodzaj i nośność gruntu, poziom wód gruntowych, ilość mas ziemnych oraz dojazd na teren budowy. Najszybciej przygotujemy wycenę, gdy otrzymamy przedmiar, projekt lub krótki opis zakresu wraz z lokalizacją inwestycji. Pliki PDF, XLSX i DOCX możesz dołączyć w formularzu poniżej."
+    }
+  ],
+  "okolice_naglowek": "Obsługujemy także okolice Hajnówki",
+  "okolice": [
+    "Białowieża",
+    "Narew",
+    "Narewka",
+    "Czeremcha",
+    "Kleszczele",
+    "Czyże",
+    "Dubicze Cerkiewne"
+  ],
+  "faq": [
+    {
+      "pytanie": "Czy wykonujecie roboty ziemne w Hajnówce?",
+      "odpowiedz": "Tak. Realizujemy roboty ziemne w Hajnówce i okolicach: wykopy, nasypy, korytowanie, niwelację terenu i wymianę gruntu. Opisz zakres i lokalizację w formularzu lub napisz e-mail, a przygotujemy wycenę."
+    },
+    {
+      "pytanie": "Jakie roboty drogowe możecie wykonać w rejonie Hajnówki?",
+      "odpowiedz": "Budowę i przebudowę dróg, drogi wewnętrzne, podbudowy pod drogi, place i parkingi oraz nawierzchnie z kostki brukowej układanej maszynowo."
+    },
+    {
+      "pytanie": "Czy pracujecie jako podwykonawca generalnego wykonawcy?",
+      "odpowiedz": "Tak. Przejmujemy wybrane zakresy robót lub całość – według potrzeb inwestycji. Przedmiar lub dokumentację można przesłać przez formularz."
+    },
+    {
+      "pytanie": "Jak przygotować zapytanie o wycenę?",
+      "odpowiedz": "Podaj lokalizację inwestycji, rodzaj robót, orientacyjną powierzchnię lub ilości oraz planowany termin. Jeśli masz przedmiar, projekt lub dokumentację, dołącz plik PDF, XLSX lub DOCX."
+    }
+  ]
+}
