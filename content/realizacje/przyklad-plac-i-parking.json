@@ -1,16 +1,14 @@
 {
-  "lokalizacja": "Miejscowość (uzupełnij)",
-  "rok": "",
-  "zakres": "To jest wpis przykładowy. Dodaj własne zdjęcia (także z telefonu) i opis wykonanych prac.",
-  "zdjecie": "",
-  "galeria": [],
-  "sprzet": [
-    "Maszyna do układania kostki"
-  ],
-  "przyklad": true,
-  "nazwa": "Przykładowa realizacja: plac i parking",
+  "nazwa": "Remont układu komunikacyjnego dróg gminnych w Białowieży",
+  "lokalizacja": "Białowieża",
+  "rok": "2023",
   "kategorie": [
     "brukarstwo",
     "zagospodarowanie-terenu"
-  ]
+  ],
+  "zakres": "Zakres prac:\nRemont układu komunikacyjnego dróg gminnych w Białowieży.\n\nZamawiający: Gmina Białowieża. Wartość zamówienia: ok. 2,59 mln zł.",
+  "zdjecie": "/assets/uploads/02-bialowieza-drogi-gminne.png",
+  "galeria": [],
+  "sprzet": [],
+  "przyklad": false
 }
