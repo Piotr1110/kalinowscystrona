@@ -1,14 +1,14 @@
 {
-  "przyklad": true,
-  "rok": "",
-  "nazwa": "Przykładowa realizacja: droga dojazdowa",
-  "sprzet": [],
-  "galeria": [],
-  "zdjecie": "",
-  "zakres": "To jest wpis przykładowy. Zastąp go prawdziwą realizacją w panelu administracyjnym: nazwa inwestycji, lokalizacja, rok, zakres prac i zdjęcia.",
-  "lokalizacja": "Miejscowość (uzupełnij)",
+  "nazwa": "Drogi dojazdowe do pól – scalenie gruntów „Eliaszuki i inne”",
+  "lokalizacja": "gm. Narewka, pow. hajnowski",
+  "rok": "2025",
   "kategorie": [
     "roboty-drogowe",
     "podbudowy"
-  ]
+  ],
+  "zakres": "Zakres prac:\nPrzebudowa dróg dojazdowych do pól w ramach zagospodarowania poscaleniowego obiektu „Eliaszuki i inne”.\n\nZamawiający: Powiat Hajnowski. Zadanie wykonane w dwóch zamówieniach w 2025 r.:\n\n- część 2 zamówienia na odcinki 2C, 4 (obręb Eliaszuki) oraz 2, 3 (obręb Mikłaszewo) – wartość ok. 3,66 mln zł,\n- odcinki 6 (obręb Planta), 1B (obręb Mikłaszewo) i 3B – część (obręb Eliaszuki) – wartość ok. 0,99 mln zł.\n\nZakres obejmował przebudowę dróg gminnych wraz ze zjazdami, a na odcinkach 6, 1B i 3B także przebudowę istniejących rowów i przepustów.",
+  "zdjecie": "/assets/uploads/01-eliaszuki-drogi-dojazdowe-do-pol.png",
+  "galeria": [],
+  "sprzet": [],
+  "przyklad": false
 }
